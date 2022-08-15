@@ -1,0 +1,72 @@
+const ancientEmpires = [
+    // Ancient Empires
+    {
+        id: 1,
+        name: "Roman Empire",
+        knowFor: "Governance, Military, Trade, Engineering",
+        duration: "27 BC - AD 395",
+        size: "3,400,000 sq. km",
+        capital: "Rome",
+        famousRulers: "Augustus, Caligula, Nero, Marcus Aurelius",
+        Religion: "Roman Catholic Church",
+        Language: "Latin",
+        
+    },
+    {
+        id: 2,
+        name: "Sumerian Empire",
+        knowFor: "Language, Governance, Architecture",
+        duration: "4100 BC - 2334 BC",
+        size: "Unknown",
+        capital: "Uruk",
+        famousRulers: "Gilgamesh, Enmebaragesi, Elulu",
+        Religion: "Sumerian",
+        Language: "Sumerian",
+    },
+    {
+        id: 3,
+        name: "Akkadian Empire",
+        knowFor: "Military, Trade, Art, Agriculture",
+        duration: "2334 BC - 2154 BC",
+        size: "800,000 sq. km",
+        capital: "Akkad",
+        famousRulers: "Sargon, Naram-Sin, Shar-Khali-Sharri",
+        Religion: "Ancient Mesopotamian",
+        Language: "Akkadian",
+        
+    },
+    {
+        id: 4,
+        name: "Babylonian Empire",
+        knowFor: "Artchitecture, Medicine, Astronomy, Mathematics",
+        duration: "1895 BC - 539 BC",
+        size: "Unknown",
+        capital: "Babylon",
+        famousRulers: "Hammurabi, Nebuchadnezzar II, Nabopolassar",
+        Religion: "Ancient Mesopotamian",
+        Language: "Akkadian",
+    },
+    {
+        id: 5,
+        name: "Assyrian Empire",
+        knowFor: "Military, Art, Engineering, Medicine",
+        duration: "1365 BC - 609 BC",
+        size: " sq. km",
+        capital: "Assur (Main capital)",
+        famousRulers: "Ashurbanipal, Erishum I, Ashurnasirpal II ",
+        Religion: "Ancient Mesopotamian",
+        Language: "Aramaic",
+        
+    },
+    {
+        id: 4,
+        name: "",
+        knowFor: "",
+        duration: "",
+        size: " sq. km",
+        capital: "",
+        famousRulers: "",
+        Religion: "",
+        
+    },
+];
