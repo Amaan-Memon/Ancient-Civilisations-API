@@ -6,14 +6,14 @@ import {
   addCiv,
   updateCiv,
   deleteCiv,
-} from "../models/civsModels.js";
+} from "../models/civModels.js";
 
 //ROUTER FOR /Civ
 const civRouter = express.Router();
 
 //GET ALL Civ S
 civRouter.get("/", async function (req, res) {
-    console.log("GET request for all Civilisations")
+  console.log("GET request for all Civilisations");
   const responseObject = {
     success: true,
     message: "returned all Civilisations",
@@ -25,7 +25,7 @@ civRouter.get("/", async function (req, res) {
 // GET  BY ID
 civRouter.get("/:id", async function (req, res) {
   const id = Number(req.params.id);
-  console.log(`GET request for Civilisation  with id of ${id}`)
+  console.log(`GET request for Civilisation  with id of ${id}`);
   const responseObject = {
     success: true,
     message: "returned Civilisation with ${id}",
@@ -36,8 +36,8 @@ civRouter.get("/:id", async function (req, res) {
 
 //REPLACE A Civ  BY ID
 civRouter.put("/:id", async function (req, res) {
-    const id = Number(req.params.id);
-    console.log(`PUT request for Civilisation  with id of ${id}`)  
+  const id = Number(req.params.id);
+  console.log(`PUT request for Civilisation  with id of ${id}`);
   const updatedCiv = req.body;
   const responseObject = {
     success: true,
@@ -47,7 +47,7 @@ civRouter.put("/:id", async function (req, res) {
   res.status(200).json(responseObject);
 });
 
-//ADD A NEW Civ 
+//ADD A NEW Civ
 civRouter.post("/", async function (req, res) {
   const newCiv = req.body;
   console.log(`POST request for new Civilisation  : ${JSON.stringify(newCiv)}`);
@@ -59,10 +59,10 @@ civRouter.post("/", async function (req, res) {
   res.status(200).json(responseObject);
 });
 
-//DELETE A Civ 
+//DELETE A Civ
 civRouter.delete("/:id", async function (req, res) {
   const id = Number(req.params.id);
-  console.log(`DELETE request for Civilisation  with id of ${id}`)
+  console.log(`DELETE request for Civilisation  with id of ${id}`);
   const responseObject = {
     success: true,
     message: `Civilisation deleted with id of ${id}`,
