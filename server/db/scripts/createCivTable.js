@@ -1,7 +1,7 @@
-import { pool, query } from "../../index.js";
+import {query } from "../../index.js";
 
-const sqlString = `CREATE TABLE IF NOT EXISTS Civs (
-    id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+const sqlString = `CREATE TABLE IF NOT EXISTS civs (
+    id  SERIAL PRIMARY,
     name TEXT,
     knowFor TEXT,
     duration TEXT,
@@ -12,10 +12,10 @@ const sqlString = `CREATE TABLE IF NOT EXISTS Civs (
     language TEXT
 );`;
 
-async function createCivsTable () {
-    const result = await query(sqlString);
-    console.log("Created Ancient Civilisations table");
-};
+async function createCivsTable() {
+  const result = await query(sqlString);
+  console.log(`Created Ancient Civilisations table: ${result}`);
+}
 
 createCivsTable();
 

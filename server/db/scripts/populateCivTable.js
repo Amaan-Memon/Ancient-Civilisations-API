@@ -1,6 +1,6 @@
 import { pool, query } from "../../index.js";
 
-import { ancientCivs } from "../../../libs/data.js";
+import { ancientCivs } from "../../libs/ancientCivs.js";
 
 const populateCivsTable = async() =>{
     for(let i = 0; i < ancientCivs.length; i++){
