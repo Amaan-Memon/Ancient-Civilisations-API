@@ -1,4 +1,4 @@
-import {query, pool} from "../db/index"
+import {query, pool} from "../db/index.js"
 
 export const getAllCivs = async () =>{
     const res = await pool.query(`SELECT * FROM ancientCivs ORDER BY id ASC;`)

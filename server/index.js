@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import civRouter from "./routes/civRouter";
+import civRouter from "./routes/civRouter.js";
 
 const PORT = process.env.port || 3000;
 const app = express();
