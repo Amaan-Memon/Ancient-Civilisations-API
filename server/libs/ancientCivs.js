@@ -54,14 +54,14 @@ const ancientCivs = [
         
     },
     {
-        name: "",
-        knowFor: "",
-        duration: "",
+        name: "Egypt",
+        knowFor: "Agricultutre, Art, Architecture, Technology, Trade",
+        duration: "3150 BC - 30 BC",
         size: " sq. km",
-        capital: "",
-        famousRulers: "",
-        religion: "",
-        language: ""
+        capital: "Memphis, Alexandria, Thebes",
+        famousRulers: "Rameses II, Amenhotep II, Akhenaten, Khufu",
+        religion: "Ancient Egyptian",
+        language: "Egyptian"
 
     },
     {
