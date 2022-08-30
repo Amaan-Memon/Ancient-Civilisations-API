@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "start": "node -r dotenv/config index.js",
     "dev": "nodemon -r dotenv/config index.js",
     "db:createCivTable": "node -r dotenv/config ./db/scripts/createCivTable.js",
     "db:populateCivTable": "node -r dotenv/config ./db/scripts/populateCivTable.js"
