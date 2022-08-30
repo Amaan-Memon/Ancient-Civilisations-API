@@ -28,7 +28,7 @@ civRouter.get("/:id", async function (req, res) {
   console.log(`GET request for Civilisation  with id of ${id}`);
   const responseObject = {
     success: true,
-    message: "returned Civilisation with ${id}",
+    message: `returned Civilisation with id: ${id}`,
     payload: await getCivById(id),
   };
   res.status(200).json(responseObject);
@@ -37,7 +37,7 @@ civRouter.get("/:id", async function (req, res) {
 //REPLACE A Civ  BY ID
 civRouter.put("/:id", async function (req, res) {
   const id = Number(req.params.id);
-  console.log(`PUT request for Civilisation  with id of ${id}`);
+  console.log(`PUT request for Civilisation with id of ${id}`);
   const updatedCiv = req.body;
   const responseObject = {
     success: true,

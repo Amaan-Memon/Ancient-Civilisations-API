@@ -1,8 +1,8 @@
-const ancientCivs = [
+export const ancientCivs = [
     // Ancient Civilisations
     {
         name: "Roman Empire",
-        knowFor: "Governance, Military, Trade, Engineering",
+        knownFor: "Governance, Military, Trade, Engineering",
         duration: "27 BC - AD 395",
         size: "3,400,000 sq. km",
         capital: "Rome",
@@ -13,7 +13,7 @@ const ancientCivs = [
     },
     {
         name: "Sumerian Empire",
-        knowFor: "language, Governance, Architecture",
+        knownFor: "language, Governance, Architecture",
         duration: "4100 BC - 2334 BC",
         size: "Unknown",
         capital: "Uruk",
@@ -23,7 +23,7 @@ const ancientCivs = [
     },
     {
         name: "Akkadian Empire",
-        knowFor: "Military, Trade, Art, Agriculture",
+        knownFor: "Military, Trade, Art, Agriculture",
         duration: "2334 BC - 2154 BC",
         size: "800,000 sq. km",
         capital: "Akkad",
@@ -34,7 +34,7 @@ const ancientCivs = [
     },
     {
         name: "Babylonian Empire",
-        knowFor: "Artchitecture, Medicine, Astronomy, Mathematics",
+        knownFor: "Artchitecture, Medicine, Astronomy, Mathematics",
         duration: "1895 BC - 539 BC",
         size: "Unknown",
         capital: "Babylon",
@@ -44,7 +44,7 @@ const ancientCivs = [
     },
     {
         name: "Assyrian Empire",
-        knowFor: "Military, Art, Engineering, Medicine",
+        knownFor: "Military, Art, Engineering, Medicine",
         duration: "1365 BC - 609 BC",
         size: " sq. km",
         capital: "Assur (Main capital)",
@@ -55,7 +55,7 @@ const ancientCivs = [
     },
     {
         name: "Egypt",
-        knowFor: "Agricultutre, Art, Architecture, Technology, Trade",
+        knownFor: "Agricultutre, Art, Architecture, Technology, Trade",
         duration: "3150 BC - 30 BC",
         size: " sq. km",
         capital: "Memphis, Alexandria, Thebes",
@@ -66,7 +66,7 @@ const ancientCivs = [
     },
     {
         name: "",
-        knowFor: "",
+        knownFor: "",
         duration: "",
         size: " sq. km",
         capital: "",
@@ -77,7 +77,7 @@ const ancientCivs = [
     },
     {
         name: "",
-        knowFor: "",
+        knownFor: "",
         duration: "",
         size: " sq. km",
         capital: "",
@@ -88,7 +88,7 @@ const ancientCivs = [
     },
     {
         name: "",
-        knowFor: "",
+        knownFor: "",
         duration: "",
         size: " sq. km",
         capital: "",
@@ -99,7 +99,7 @@ const ancientCivs = [
     },
     {
         name: "",
-        knowFor: "",
+        knownFor: "",
         duration: "",
         size: " sq. km",
         capital: "",
@@ -110,7 +110,7 @@ const ancientCivs = [
     },
     {
         name: "",
-        knowFor: "",
+        knownFor: "",
         duration: "",
         size: " sq. km",
         capital: "",
@@ -121,7 +121,7 @@ const ancientCivs = [
     },
     {
         name: "",
-        knowFor: "",
+        knownFor: "",
         duration: "",
         size: " sq. km",
         capital: "",
@@ -132,7 +132,7 @@ const ancientCivs = [
     },
     {
         name: "",
-        knowFor: "",
+        knownFor: "",
         duration: "",
         size: " sq. km",
         capital: "",
@@ -143,7 +143,7 @@ const ancientCivs = [
     },
     {
         name: "",
-        knowFor: "",
+        knownFor: "",
         duration: "",
         size: " sq. km",
         capital: "",
@@ -154,7 +154,7 @@ const ancientCivs = [
     },
     {
         name: "",
-        knowFor: "",
+        knownFor: "",
         duration: "",
         size: " sq. km",
         capital: "",
@@ -165,7 +165,7 @@ const ancientCivs = [
     },
     {
         name: "",
-        knowFor: "",
+        knownFor: "",
         duration: "",
         size: " sq. km",
         capital: "",
@@ -176,7 +176,7 @@ const ancientCivs = [
     },
     {
         name: "",
-        knowFor: "",
+        knownFor: "",
         duration: "",
         size: " sq. km",
         capital: "",

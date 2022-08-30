@@ -1,18 +1,19 @@
 import {query, pool} from "../db/index.js"
 
 export const getAllCivs = async () =>{
-    const res = await pool.query(`SELECT * FROM ancientCivs ORDER BY id ASC;`)
+    const res = await pool.query(`SELECT * FROM civs ORDER BY id ASC;`)
     return res.rows;
 }
 
-export const getCivById = async () =>{
-const res = await pool.query(`SELECT * FROM ancientCivs WHERE id = ($1);`, [id])
+export const getCivById = async (id) =>{
+
+const res = await pool.query(`SELECT * FROM civs WHERE id = (${id});`)
 return res.rows;
 }
 
 export const addCiv = async (newCiv) =>{
     console.log(newCiv)
-    const res = await pool.query(`INSERT INTO ancientCivs name, knownFor, duration, size, capital, famousRulers, religion, language ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *;`,
+    const res = await pool.query(`INSERT INTO civs name, knownFor, duration, size, capital, famousRulers, religion, language ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *;`,
     [newCiv.name, newCiv.knownFor, newCiv.duration, newCiv.size, newCiv.capital, newCiv.famousRulers, newCiv.religion, newCiv.language]);
     console.log(`new ancient civilisation added, ${JSON.stringify(res.rows)}`);
     return res.rows;
@@ -21,7 +22,7 @@ export const addCiv = async (newCiv) =>{
   //UPDATE (PUT) A ancientCiv
   export async function updateCiv(id, updatedCiv) {
     const res = await query(
-    `UPDATE ancientCivs 
+    `UPDATE civs 
     SET name =($1), 
     knownFor=($2),
     duration=($3),
@@ -39,7 +40,7 @@ export const addCiv = async (newCiv) =>{
   
   //DELETE A ancientCiv
   export async function deleteCiv(id) {
-      const res = await query(`DELETE FROM ancientCivs 
+      const res = await query(`DELETE FROM civs 
       WHERE id=(${id}) RETURNING*;`);
       console.log(`Ancient Civilisation deleted: ${JSON.stringify(res.rows)}`)
       return res.rows;

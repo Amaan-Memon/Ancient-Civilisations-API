@@ -6,7 +6,9 @@ export const pool = new pg.Pool ({
   database: process.env.PGDATABASE,
   password: process.env.PGPASSWORD,
   port: process.env.PGPORT,
+  ssl: {rejectUnauthorized: false},
 });
+
 
 export function query (text, params, callback) {
     return pool.query(text, params, callback);
