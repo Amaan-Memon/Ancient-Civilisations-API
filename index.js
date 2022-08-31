@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import civRouter from "./routes/civRouter.js";
 
-const PORT = process.env.port || 3001;
+const PORT = process.env.PGPORT || 3001;
 const app = express();
 
 app.use(cors());
